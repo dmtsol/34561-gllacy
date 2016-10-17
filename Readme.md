@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Dmitry Solopov](https://up.htmlacademy.ru/htmlcss/15/user/34561).
-* Наставник: [Максим Фарига].
+* Наставник: [Максим Фарига](https://up.htmlacademy.ru/htmlcss/15/user/6090).
 
 ---
 
