@@ -2,7 +2,7 @@ body,
 h1,
 h2 {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.375;
   color: #323232;
   font-weight: normal;
   font-family: "Roboto", "Arial", sans-serif;
@@ -22,3 +22,417 @@ h2 {
   font-size: 60px;
   line-height: 60.35px;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  outline: 2px dashed red;
+  background-color: rgba(237, 232, 139, 0.8);
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Начало шапки */
+header,
+header > *,
+header > * > *,
+header > * > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(177, 139, 186, 0.5);
+}
+
+.header-left {
+  float: left;
+  width: 587px;
+}
+
+.header-left .main-logo,
+.header-left .main-navigation {
+  float: left;
+}
+
+.header-left .main-navigation > li {
+  display: inline-block;
+  list-style: none;
+}
+
+.header-left .main-navigation > li > .navigation-pop-up {
+  display: none;
+}
+
+.header-right {
+  float: right;
+  width: 320px;
+  min-height: 64px;
+}
+
+.header-right .search-block {
+  float: left;
+}
+
+.search-block .search-form {
+  display: none;
+}
+
+.header-right .user-block {
+  float: left;
+}
+
+.user-block .login-form {
+  display: none;
+}
+
+.header-right .cart-block {
+  float: left;
+}
+
+.cart-block .cart-preview {
+  display: none;
+}
+
+header .phone {
+  float: right;
+  width: 320px;
+  height: 64px;
+  text-align: right;
+}
+
+.phone .phone-info,
+.phone .phone-number {
+  font-weight: bold;
+}
+
+.phone .phone-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone .phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*Конец шапки*/
+
+/*Основное содержание*/
+/*Хлебные крошки*/
+.breadcrumbs,
+.breadcrumbs > *,
+.breadcrumbs > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(61, 239, 33, 0.5);
+}
+
+.breadcrumbs ul {
+  margin:0;
+}
+
+.breadcrumbs li{
+  display: inline-block;
+  list-style: none;
+}
+/*Конец хлебных крошек*/
+
+/*Фильтр*/
+.filter-form,
+.filter-form > *,
+.filter-form > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(65, 216, 214, 0.5);
+}
+
+.filter-form {
+  width: 906px;
+}
+
+.filter-form fieldset,
+.filter-form .filter-btn {
+  float: left;
+}
+
+.filter-form fieldset:nth-child(2) {
+  width: 230px;
+}
+
+.filter-form fieldset:nth-child(4) {
+  width: 710px;
+}
+/*Конец фильтра*/
+
+/*Слайдер*/
+.slider,
+.slider > *,
+.slider > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(96, 118, 178, 0.5);
+}
+
+.slider {
+  margin-top: 280px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.slider .title-second,
+.slider .title-third {
+  display: none;
+}
+
+.slider h2 {
+  width: 670px;
+  margin: 0 auto;
+  text-align: left;
+  color: #ffffff;
+}
+
+.slider .slider-control > * {
+  display: inline;
+}
+
+.slider .slider-control {
+  text-align: left;
+}
+/*Конец слайдера*/
+
+/*Промо*/
+.promo,
+.promo > *,
+.promo > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(95, 211, 167, 0.5);
+}
+
+.promo {
+  width: 1146px;
+  margin: 0 auto 40px;
+  color: #ffffff;
+}
+
+.promo .promo-title {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.promo .promo-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.promo .promo-left,
+.promo .promo-right {
+  float: left;
+  width: 560px;
+  margin-right: 26px;
+}
+
+.promo .promo-right {
+  margin-right: 0;
+}
+/*Конец промо*/
+
+/*Хит*/
+.catalog-items-cards,
+.catalog-items-cards > *,
+.catalog-items-cards > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(68, 86, 226, 0.5);
+}
+
+.catalog-items-cards {
+  margin: 0 auto 40px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-size: 0;
+  text-align: justify;
+}
+
+.catalog-items .catalog-items-cards {
+  margin: 0 auto;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 293px;
+  vertical-align: top;
+}
+
+.catalog-item .item-img {
+  width: 267px;
+  margin: 0 auto;
+}
+
+.catalog-item .item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.catalog-item h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  text-align: center;
+}
+
+.catalog-item a {
+  color: #ffffff;
+}
+
+.catalog-items .pagination,
+.catalog-items .pagination > * {
+  outline: 2px dashed red;
+  background-color: rgba(61, 239, 33, 0.5);
+}
+
+.catalog-items .pagination {
+  margin: 0 auto;
+}
+
+.catalog-items .pagination > li {
+  display: inline-block;
+  list-style: none;
+}
+/*Конец хит'а*/
+
+/*О магазине*/
+.about,
+.about > *,
+.about > * > *,
+.about > * > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(20, 224, 30, 0.5);
+}
+
+.about {
+  width: 1146px;
+  margin: 0 auto 40px;
+}
+
+.about h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about .about-info-left,
+.about .about-info-right {
+  float: left;
+  width: 490px;
+}
+
+.about .about-info-left {
+  margin-right: 26px;
+  padding-left: 70px;
+}
+
+.about .about-info-right {
+  padding-left: 55px;
+}
+/*Конец о магазине*/
+
+/*Новости и подписка*/
+.news-and-subscribe,
+.news-and-subscribe > *,
+.news-and-subscribe > * > *,
+.news-and-subscribe > * > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(68, 229, 205, 0.5);
+}
+
+.news-and-subscribe {
+  width: 1146px;
+  margin: 0 auto 40px;
+}
+
+.news-and-subscribe .news,
+.news-and-subscribe .subscribe {
+  float: left;
+  width: 560px;
+  min-height: 220px;
+}
+
+.news-and-subscribe .news {
+  margin-right: 26px;
+}
+/*Конец новостей и подписки*/
+
+/*Карта и контактная информация*/
+.map-and-contacts,
+.map-and-contacts > *,
+.map-and-contacts > * > *,
+.map-and-contacts > * > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(147, 68, 226, 0.5);
+}
+
+.map-and-contacts {
+  width: 1200px;
+  min-height: 430px;
+}
+
+.map-and-contacts .contacts {
+  float: right;
+  margin-top: 62px;
+  margin-right: 27px;
+  width: 302px;
+  min-height: 305px;
+}
+
+.callback {
+  display: none;
+}
+/*Конец карты и контактной информации*/
+
+/*Подвал*/
+.footer,
+.footer > *,
+.footer > * > *,
+.footer > * > * > * {
+  outline: 2px dashed red;
+  background-color: rgba(69, 201, 224, 0.5);
+}
+
+.footer .container {
+  min-height: 104px;
+}
+
+.footer .footer-social,
+.footer .footer-info {
+  float: left;
+  margin-right: 205px;
+}
+
+.footer .footer-copyright {
+  float: right;
+}
+
+.footer .footer-social,
+.footer .footer-copyright {
+  width: 220px;
+}
+
+.footer .footer-info {
+  width: 350px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer .footer-providers,
+.footer .footer-documents {
+  float: left;
+  width: 120px;
+}
+
+.footer .footer-providers {
+  margin-right: 27px;
+}
+
+.footer .footer-providers > li,
+.footer .footer-documents > li {
+  display: inline;
+}
+/*Конец подвала*/

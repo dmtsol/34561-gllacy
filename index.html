@@ -3,94 +3,93 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <input id="slider-one">
-    <input id="slider-two">
-    <input id="slider-three">
+    <input type="hidden" id="slider-one">
+    <input type="hidden" id="slider-two">
+    <input type="hidden" id="slider-three">
     <div class="background-theme">
       <!-- Начало шапки -->
       <header class="header">
-        <div class="container">
+        <div class="container clearfix">
           <div class="header-left">
             <div class="main-logo">
               <img src="img/gllacy-logo.svg" width="154" height="64" alt="Магазин Глейси">
             </div>
-            <nav class="main-navigation">
-              <ul>
-                <li>
-                  <a href="#">Каталог</a>
-                  <ul class="navigation-pop-up">
-                    <li class="pop-up-new">
-                      <a href="#">Новинки</a>
-                    </li>
-                    <li>
-                      <a href="ice-cream.html">Сливочное</a>
-                    </li>
-                    <li>
-                      <a href="#">Щербеты</a>
-                    </li>
-                    <li>
-                      <a href="#">Фруктовый лед</a>
-                    </li>
-                    <li>
-                      <a href="#">Мелорин</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Доставка и оплата</a>
-                </li>
-                <li>
-                  <a href="#">О Компании</a>
-                </li>
-              </ul>
-            </nav>
+            <ul class="main-navigation">
+              <li>
+                <a href="#">Каталог</a>
+                <ul class="navigation-pop-up">
+                  <li class="pop-up-new">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li>
+                    <a href="ice-cream.html">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">О Компании</a>
+              </li>
+            </ul>
           </div>
           <div class="header-right">
-            <div class="search-block">
-              <a class="search" href="#">Поиск</a>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <div class="form-block">
-                  <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-                  <label for="search-field">Что ищем?</label>
-                </div>
-              </form>
-            </div>
-            <div class="user-block">
-              <a class="login" href="#">Вход</a>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="form-block">
-                  <input type="email" name="e-mail" id="email-field" placeholder="Электронная почта">
-                  <label for="email-field">Электронная почта</label>
-                </div>
-                <div class="form-block">
-                  <input type="password" name="password" id="password-field" placeholder="Пароль">
-                  <label for="password-field">Пароль</label>
-                </div>
-                <div class="login-container">
-                  <div class="login-left">
-                    <button class="login-btn">Войти</button>
+              <div class="search-block">
+                <a class="search" href="#">Поиск</a>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <div class="form-block">
+                    <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                    <label for="search-field">Что ищем?</label>
                   </div>
-                  <div class="login-right">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                </form>
+              </div>
+              <div class="user-block">
+                <a class="login" href="#">Вход</a>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form-block">
+                    <input type="email" name="e-mail" id="email-field" placeholder="Электронная почта">
+                    <label for="email-field">Электронная почта</label>
                   </div>
-                </div>
-              </form>
-            </div>
-            <div class="cart-block">
-              <a class="cart" href="#">Пусто</a>
-            </div>
-            <div class="phone">
+                  <div class="form-block">
+                    <input type="password" name="password" id="password-field" placeholder="Пароль">
+                    <label for="password-field">Пароль</label>
+                  </div>
+                  <div class="login-container">
+                    <div class="login-left">
+                      <button class="login-btn">Войти</button>
+                    </div>
+                    <div class="login-right">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="cart-block">
+                <a class="cart" href="#">Пусто</a>
+              </div>
+          </div>
+          <div class="phone">
               <div class="phone-info">
                 С 10 до 20, ежедневно
               </div>
               <div class="phone-number">
                 8 812 450-25-25
               </div>
-            </div>
           </div>
         </div>
       </header>
@@ -119,7 +118,7 @@
         </div>
         <!-- Конец слайдера -->
         <!-- Промо -->
-        <div class="promo">
+        <div class="promo clearfix">
           <section class="promo-left">
             <h2 class="promo-title">Малинка даром!</h2>
             <p class="promo-text">
@@ -177,34 +176,38 @@
         </section>
         <!-- Конец хит'а -->
         <!-- О магазине -->
-        <section class="about">
+        <section class="about clearfix">
           <h3 class="about-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-          <div class="about-info">
-            <p class="description-text">
-              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-            </p>
+          <div class="about-info-left">
+            <div class="about-info">
+              <p class="description-text">
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              </p>
+            </div>
+            <div class="about-info">
+              <p class="description-text">
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены
+                из натурального, экологически чистого сырья.
+              </p>
+            </div>
           </div>
-          <div class="about-info">
-            <p class="description-text">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены
-              из натурального, экологически чистого сырья.
-            </p>
-          </div>
-          <div class="about-info">
-            <p class="description-text">
-              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-            </p>
-          </div>
-          <div class="about-info">
-            <p class="description-text">
-              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
-              превосходный вкус.
-            </p>
+          <div class="about-info-right">
+            <div class="about-info">
+              <p class="description-text">
+                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </p>
+            </div>
+            <div class="about-info">
+              <p class="description-text">
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
+                превосходный вкус.
+              </p>
+            </div>
           </div>
         </section>
         <!-- Конец о магазине -->
         <!-- Новости и подписка -->
-        <section class="news-and-subscribe">
+        <section class="news-and-subscribe clearfix">
           <div class="news">
             <div class="news-in-blog">
               Новое в нашем блоге
@@ -274,19 +277,15 @@
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
           </div>
-          <div class="footer-info">
-            <div class="footer-providers">
-              <ul>
-                <li><a class="providers-like" href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-              </ul>
-            </div>
-            <div class="footer-documents">
-              <ul>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
-              </ul>
-            </div>
+          <div class="footer-info">        
+            <ul class="footer-providers">
+              <li><a class="providers-like" href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul class="footer-documents">
+              <li><a href="#">Наши документы</a></li>
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>
           </div>
           <div class="footer-copyright">
             <div class="copyright-logo">

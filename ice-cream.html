@@ -3,46 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин Глейси - сливочное мороженое</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- Начало шапки -->
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-left">
           <div class="main-logo">
             <img src="img/gllacy-logo.svg" width="154" height="64" alt="Магазин Глейси">
           </div>
-          <nav class="main-navigation">
-            <ul>
-              <li>
-                Каталог
-                <ul class="navigation-pop-up">
-                  <li class="pop-up-new">
-                    <a href="#">Новинки</a>
-                  </li>
-                  <li>
-                    <a href="ice-cream.html">Сливочное</a>
-                  </li>
-                  <li>
-                    <a href="#">Щербеты</a>
-                  </li>
-                  <li>
-                    <a href="#">Фруктовый лед</a>
-                  </li>
-                  <li>
-                    <a href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Доставка и оплата</a>
-              </li>
-              <li>
-                <a href="#">О Компании</a>
-              </li>
-            </ul>
-          </nav>
+          <ul claSS="main-navigation">
+            <li>
+              Каталог
+              <ul class="navigation-pop-up">
+                <li class="pop-up-new">
+                  <a href="#">Новинки</a>
+                </li>
+                <li>
+                  <a href="ice-cream.html">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#">Фруктовый лед</a>
+                </li>
+                <li>
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">О Компании</a>
+            </li>
+          </ul>
         </div>
         <div class="header-right">
           <div class="search-block">
@@ -104,13 +103,13 @@
               </div>
             </div>
           </div>
-          <div class="phone">
-            <div class="phone-info">
-              С 10 до 20, ежедневно
-            </div>
-            <div class="phone-number">
-              8 812 450-25-25
-            </div>
+        </div>
+        <div class="phone">
+          <div class="phone-info">
+            С 10 до 20, ежедневно
+          </div>
+          <div class="phone-number">
+            8 812 450-25-25
           </div>
         </div>
       </div>
@@ -132,58 +131,55 @@
         </ul>
       </nav>
       <h1 class="category-title">Сливочное мороженое</h1>
-
       <!-- Фильтр -->
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Сортировка:</legend>
-            <select name="sorting">
-              <option value="by-popular">по популярности</option>
-              <option value="by-cheap">сначала недорогие</option>
-              <option value="by-fat">по жирам</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend class="price-range">
-              <span class="price-title">Цена:</span>
-              <span class="price-cost"><input type="text" value="100"> руб.</span> -
-              <span class="price-cost"><input type="text" value="500"> руб.</span>
-            </legend>
-            <div class="price-scrollbar">
-              <div class="price-toggle">Меньше</div>
-              <div class="scroll"></div>
-              <div class="price-toggle">Больше</div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
-            <input type="radio" name="fat" value="0" id="fat-zero-field">
-            <label for="fat-zero-field">0%</label>
-            <input type="radio" name="fat" value="10" id="fat-to-ten-field" checked>
-            <label for="fat-to-ten-field">до 10%</label>
-            <input type="radio" name="fat" value="30" id="fat-to-thirty-field">
-            <label for="fat-to-thirty-field">до 30%</label>
-            <input type="radio" name="fat" value="over 30" id="fat-higher-thirty-field">
-            <label for="fat-higher-thirty-field">выше 30%</label>
-          </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
-            <input type="checkbox" name="chocolate" id="chocolate-field" checked>
-            <label for="chocolate-field">Шоколадные</label>
-            <input type="checkbox" name="sugar-topping" id="sugar-topping-field" checked>
-            <label for="sugar-topping-field">Сахарные присыпки</label>
-            <input type="checkbox" name="fruit" id="fruit-field">
-            <label for="fruit-field">Фрукты</label>
-            <input type="checkbox" name="syrups" id="syrups-field">
-            <label for="syrups-field">Сиропы</label>
-            <input type="checkbox" name="jams" id="jams-field">
-            <label for="jams-field">Сиропы</label>
-          </fieldset>
-          <button class="filter-btn" type="submit">Применить</button>
-        </form>
-
+      <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="sorting">
+            <option value="by-popular">по популярности</option>
+            <option value="by-cheap">сначала недорогие</option>
+            <option value="by-fat">по жирам</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend class="price-range">
+            <span class="price-title">Цена:</span>
+            <span class="price-cost"><input type="text" value="100"> руб.</span> -
+            <span class="price-cost"><input type="text" value="500"> руб.</span>
+          </legend>
+          <div class="price-scrollbar">
+            <div class="price-toggle">Меньше</div>
+            <div class="scroll"></div>
+            <div class="price-toggle">Больше</div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <input type="radio" name="fat" value="0" id="fat-zero-field">
+          <label for="fat-zero-field">0%</label>
+          <input type="radio" name="fat" value="10" id="fat-to-ten-field" checked>
+          <label for="fat-to-ten-field">до 10%</label>
+          <input type="radio" name="fat" value="30" id="fat-to-thirty-field">
+          <label for="fat-to-thirty-field">до 30%</label>
+          <input type="radio" name="fat" value="over 30" id="fat-higher-thirty-field">
+          <label for="fat-higher-thirty-field">выше 30%</label>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <input type="checkbox" name="chocolate" id="chocolate-field" checked>
+          <label for="chocolate-field">Шоколадные</label>
+          <input type="checkbox" name="sugar-topping" id="sugar-topping-field" checked>
+          <label for="sugar-topping-field">Сахарные присыпки</label>
+          <input type="checkbox" name="fruit" id="fruit-field">
+          <label for="fruit-field">Фрукты</label>
+          <input type="checkbox" name="syrups" id="syrups-field">
+          <label for="syrups-field">Сиропы</label>
+          <input type="checkbox" name="jams" id="jams-field">
+          <label for="jams-field">Сиропы</label>
+        </fieldset>
+        <button class="filter-btn" type="submit">Применить</button>
+      </form>
       <!-- Конец фильтра -->
-
       <!-- Каталог -->
       <div class="catalog-items">
         <section class="catalog-items-cards">
@@ -357,7 +353,7 @@
           </article>
         </section>
         <!-- Навигация по страницам каталога -->
-          <ul class="pagination">
+        <ul class="pagination">
           <li>
             1
           </li>
@@ -389,18 +385,14 @@
           <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
         </div>
         <div class="footer-info">
-          <div class="footer-providers">
-            <ul>
-              <li><a class="providers-like" href="#">Для поставщиков</a></li>
-              <li><a href="#">О производстве</a></li>
-            </ul>
-          </div>
-          <div class="footer-documents">
-            <ul>
-              <li><a href="#">Наши документы</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
-            </ul>
-          </div>
+          <ul class="footer-providers">
+            <li><a class="providers-like" href="#">Для поставщиков</a></li>
+            <li><a href="#">О производстве</a></li>
+          </ul>
+          <ul class="footer-documents">
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
         </div>
         <div class="footer-copyright">
           <div class="copyright-logo">
